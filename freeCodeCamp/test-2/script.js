@@ -40,7 +40,7 @@ const fromArabicToRoman = (userNum) => {
           output.push(romanChars[j][0] + romanChars[j - 1][0]);
           break;
         } else if (num > 5) {
-          console.log({ num, roman: romanChars[j][0] });
+          // console.log({ num, roman: romanChars[j][0] });
           output.push(romanChars[j][0] + romanChars[j + 1][0].repeat(num - 5));
           break;
         } else {
